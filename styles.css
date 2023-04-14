@@ -7,7 +7,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("/Images/background-web-page.png");
+  background-image: url("/Images/tech.jpeg");
   min-height: 100%;
 }
 .w3-bar .w3-button {

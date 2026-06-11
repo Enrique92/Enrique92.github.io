@@ -53,3 +53,20 @@ body, html {
   margin-right: auto;
   width: 50%;
 }
+.experience-item {
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+.experience-item:last-child {
+  border-bottom: none;
+}
+.experience-item h4 {
+  margin-bottom: 4px;
+}
+.project-icon {
+  font-size: 60px;
+  color: #2196F3;
+  margin: 16px 0;
+  display: inline-block;
+}

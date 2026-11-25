@@ -114,10 +114,11 @@ h3 { font-size: 18px; font-weight: 700; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0 !important; }
 .tags span { font-size: 13px; font-weight: 500; color: var(--accent-strong); background: var(--accent-soft); border-radius: 999px; padding: 3px 10px; }
 
-/* Skills */
-.skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; align-items: start; }
-.skill-group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
-.skill-group h3 { font-size: 15px; margin-bottom: 12px; }
+/* Skills: one row per group, the name on the left and its skills on the right */
+.skills { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 24px; }
+.skill-group { display: grid; grid-template-columns: 220px 1fr; gap: 16px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.skill-group:last-child { border-bottom: 0; }
+.skill-group h3 { font-size: 15px; margin: 0; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 !important; }
 .chips span { font-size: 14px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; background: var(--bg); }
 
@@ -175,12 +176,14 @@ h3 { font-size: 18px; font-weight: 700; }
   .avatar { width: 128px; height: 128px; order: -1; border-width: 4px; }
   .facts { grid-template-columns: 1fr; margin-top: 28px; }
   .two-col { grid-template-columns: 1fr; gap: 24px; }
+  .skill-group { grid-template-columns: 1fr; gap: 10px; }
+  .skills { padding: 4px 16px; }
   .section { padding: 52px 0; }
   .contact-list li { grid-template-columns: 1fr; gap: 0; }
 }
 @media (max-width: 480px) {
   .wrap { padding: 0 16px; }
-  .skills, .cards { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
   .timeline { padding-left: 18px; }
   .job::before { left: -27px; }
 }

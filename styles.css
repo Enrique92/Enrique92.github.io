@@ -130,6 +130,10 @@ h3 { font-size: 18px; font-weight: 700; }
 .card-body .tags { margin: 4px 0 0 !important; }
 .card-link { margin-top: auto; padding-top: 8px; font-weight: 600; text-decoration: none; }
 .card-plain { border-top: 4px solid var(--accent); }
+.card img.shot { object-fit: cover; object-position: top; padding: 0; }
+.card .note { margin-top: auto !important; padding-top: 8px; font-size: 14px; font-weight: 600; color: var(--muted) !important; }
+.sub { font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 8px 0 16px; }
+.cards + .sub { margin-top: 40px; }
 
 /* Education */
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }

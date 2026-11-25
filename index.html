@@ -1,302 +1,327 @@
 <!DOCTYPE html>
-<html>
-<title>Enrique Alcaide Muñoz</title>
-<meta charset="UTF-8">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
-<script src="scripts.js"></script>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enrique Alcaide Muñoz · QA Engineer</title>
+  <meta name="description" content="Enrique Alcaide Muñoz, QA Engineer in Vancouver. 6+ years testing web, mobile and API products, with end-to-end automation in Playwright, Cypress and Maestro. Authorized to work in Canada and the EU.">
+  <meta property="og:title" content="Enrique Alcaide Muñoz · QA Engineer">
+  <meta property="og:description" content="6+ years testing web, mobile and API products. Playwright, Cypress, Maestro, Postman. Authorized to work in Canada and the EU.">
+  <meta property="og:image" content="https://enrique92.github.io/Images/profile-crop.jpg">
+  <meta property="og:url" content="https://enrique92.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a class="w3-bar-item w3-button w3-wide" href="#home">EAM</a>
-      <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small">
-        <a class="w3-bar-item w3-button" href="#about">ABOUT</a>
-        <a class="w3-bar-item w3-button" href="#experience">EXPERIENCE</a>
-        <a class="w3-bar-item w3-button" href="#work"></i>PROJECTS</a>
-        <a class="w3-bar-item w3-button" href="#skills"></i>SKILLS</a>
-        <a class="w3-bar-item w3-button" href="#contact"></i>CONTACT</a>
-      </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" href="javascript:void(0)"
-        onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Enrique Alcaide</a>
+      <nav aria-label="Sections">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cv" href="Enrique_Alcaide_Resume.pdf" download>Download CV</a>
+      <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </div>
-
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" id="mySidebar"
-    style="display:none">
-    <a class="w3-bar-item w3-button w3-large w3-padding-16" href="javascript:void(0)" onclick="w3_close()">Close ×</a>
-    <a class="w3-bar-item w3-button" href="#about" onclick="w3_close()"><b>ABOUT</b></a>
-    <a class="w3-bar-item w3-button" href="#experience" onclick="w3_close()"><b>EXPERIENCE</b></a>
-    <a class="w3-bar-item w3-button" href="#work" onclick="w3_close()"><b>PROJECTS</b></a>
-    <a class="w3-bar-item w3-button" href="#skills" onclick="w3_close()"><b>SKILLS</b></a>
-    <a class="w3-bar-item w3-button" href="#contact" onclick="w3_close()"><b>CONTACT</b></a>
-  </nav>
-
-  <!-- Header with full-height image -->
-  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-left w3-text-white" style="padding:48px">
-      <span class="w3-jumbo w3-hide-small"><b>Enrique Alcaide Muñoz</b></span><br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Enrique Alcaide Muñoz</span><br>
-      <span class="w3-large heading2 letter">Quality Assurance Engineer</span><br>
-      <span class="w3-large heading3 letter2"><i>"Quality Assurance ready for Testing!!!"</i></span>
-    </div>
-    <div class="w3-display-bottomleft w3-text-white w3-xlarge" style="padding:24px 48px">
-      <a href="https://ca.linkedin.com/in/enrique-alcaide-muñoz" title="Linkedin"><i
-          class="fa fa-linkedin w3-hover-opacity"></i></a>
-      <a href="https://github.com/Enrique92" title="GitHub"><i class="fa fa-github w3-hover-opacity"></i></a>
-    </div>
-    <img class="profileImg" src="/Images/Profile.jpg">
   </header>
 
-  <!-- About Section -->
-  <div class="w3-container" id="about" style="padding:26px 16px">
-    <h3 class="w3-center"><b>ABOUT ME</b></h3>
-    <div class="w3-row-padding w3-center letter aboutMe" style="margin-top:8px;">
-      <p>My name is Enrique, I'm from Spain and currently living in Vancouver, Canada. In 2018 I left my
-        hometown and family to start this journey. It wasn't easy at first, the language barrier was a big
-        obstacle and I had to take any job to pay my bills and studies. After finishing my studies it was hard
-        to break into the QA field, but one company gave me the opportunity, and ever since I've worked hard
-        to improve my skills and keep learning every day, because in this industry you need to stay up to date
-        or you fall behind.
-      </p>
-      <p>Today I'm a Quality Assurance Engineer passionate about manual and automated testing, working across
-        the entire agile software development lifecycle for mobile, web and API projects. Vancouver is now my
-        home, and my advice is simple: keep fighting for your ideas and dreams, and never give up.
-      </p>
-    </div>
-  </div>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">QA Engineer · Vancouver, Canada</p>
+          <h1>Enrique Alcaide Muñoz</h1>
+          <p class="lead">I help teams ship web, mobile and API products with confidence: clear test plans,
+            careful manual testing, and end-to-end automation with Playwright, Cypress and Maestro running in CI.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="Enrique_Alcaide_Resume.pdf" download>Download CV</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+          <ul class="facts">
+            <li><strong>6+ years</strong><span>in Quality Assurance</span></li>
+            <li><strong>Canada &amp; EU</strong><span>authorized to work, no sponsorship</span></li>
+            <li><strong>English &amp; Spanish</strong><span>native or bilingual</span></li>
+          </ul>
+        </div>
+        <img class="avatar" src="Images/profile-crop.jpg" alt="Enrique Alcaide Muñoz" width="250" height="250">
+      </div>
+    </section>
 
-  <!-- Experience Section -->
-  <div class="w3-container w3-light-grey" id="experience" style="padding:26px 16px">
-    <h3 class="w3-center"><b>EXPERIENCE</b></h3>
-    <div class="w3-row-padding letter aboutMe" style="margin-top:32px">
-      <div class="experience-item">
-        <h4 class="font-weight-bold">Quality Assurance Engineer</h4>
-        <p class="w3-text-grey"><b>Bethink Labs</b> &middot; Permanent Full-time &middot; Dec 2023 - Present &middot; Vancouver, BC, Canada (Remote)</p>
-        <p>Working on QA initiatives throughout the entire agile software development life cycle for mobile,
-          web and API projects. Planning and executing functional, regression and automated testing to ensure
-          successful deployments, creating and maintaining test suites, and mentoring peers in QA best
-          practices.</p>
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li class="job">
+            <div class="job-head">
+              <h3>Quality Assurance Engineer <span class="at">· Bethink Labs</span></h3>
+              <span class="when">Dec 2023 – Present</span>
+            </div>
+            <p class="where">Vancouver, BC · Remote · Full-time</p>
+            <ul>
+              <li>Drive QA across the full Agile development life cycle for mobile, web and API projects.</li>
+              <li>Build and maintain mobile test automation with JavaScript and Maestro, running in GitHub Actions.</li>
+              <li>Test iOS and Android apps with Xcode, Android Studio and TestFlight, and inspect API traffic with Proxyman and Postman.</li>
+              <li>Mentor peers in QA best practices.</li>
+            </ul>
+            <p class="tags"><span>Maestro</span><span>JavaScript</span><span>GitHub Actions</span><span>Testmo</span><span>ClickUp</span><span>Postman</span></p>
+          </li>
+          <li class="job">
+            <div class="job-head">
+              <h3>Software Quality Assurance Tester <span class="at">· Stamped</span></h3>
+              <span class="when">Jul 2023 – Dec 2023</span>
+            </div>
+            <p class="where">Vancouver, BC · Remote · Contract</p>
+            <ul>
+              <li>Developed, maintained and executed manual test cases in TestRail.</li>
+              <li>Identified, logged and triaged defects in JIRA with cross-functional teams.</li>
+              <li>Reported test planning, execution and defect statistics to product teams using standard quality metrics.</li>
+            </ul>
+            <p class="tags"><span>TestRail</span><span>JIRA</span><span>Android Studio</span><span>Xcode</span></p>
+          </li>
+          <li class="job">
+            <div class="job-head">
+              <h3>Quality Assurance Specialist <span class="at">· Sologenic</span></h3>
+              <span class="when">Apr 2023 – Jul 2023</span>
+            </div>
+            <p class="where">Vancouver, BC · On-site · Full-time</p>
+            <ul>
+              <li>Tested Sologenic's decentralized exchange (DEX) platform with test plans, test cases and test scripts.</li>
+              <li>Automated end-to-end tests with Playwright and integrated them with GitHub Actions.</li>
+              <li>Ran performance and load testing to check stability during high-traffic events.</li>
+            </ul>
+            <p class="tags"><span>Playwright</span><span>GitHub Actions</span><span>Load testing</span></p>
+          </li>
+          <li class="job">
+            <div class="job-head">
+              <h3>Quality Assurance Specialist <span class="at">· Knit Agency (formerly Pixel Union)</span></h3>
+              <span class="when">May 2021 – Apr 2023</span>
+            </div>
+            <p class="where">Vancouver, BC · Full-time</p>
+            <ul>
+              <li>Tested client products before release, including Shopify accounting and finance projects.</li>
+              <li>Built Playwright automation in JavaScript for smoke tests and deployments, with CI in Checkly and GitHub Actions, and wrote end-to-end tests in Cypress.</li>
+              <li>Led requirements review and test plan creation, and met clients weekly to reach full test coverage.</li>
+            </ul>
+            <p class="tags"><span>Playwright</span><span>Cypress</span><span>Checkly</span><span>Shopify</span><span>TestRail</span></p>
+          </li>
+          <li class="job">
+            <div class="job-head">
+              <h3>Junior QA Engineer <span class="at">· Craver Solutions</span></h3>
+              <span class="when">Jan 2021 – May 2021</span>
+            </div>
+            <p class="where">Vancouver, BC · Full-time</p>
+            <ul>
+              <li>Wrote automation scripts with Selenium and Appium in JavaScript, running in Jenkins.</li>
+              <li>Automated API checks in Postman.</li>
+              <li>Found edge cases through black box testing and gave root cause analysis on escalations.</li>
+            </ul>
+            <p class="tags"><span>Selenium</span><span>Appium</span><span>Jenkins</span><span>Postman</span></p>
+          </li>
+          <li class="job">
+            <div class="job-head">
+              <h3>Development Support Level 2 / QA Tester <span class="at">· Keywords Studios</span></h3>
+              <span class="when">May 2020 – Jan 2021</span>
+            </div>
+            <p class="where">Vancouver, BC · Full-time</p>
+            <ul>
+              <li>Tested and verified features for the Pro Clubs team and became the knowledge base for that area.</li>
+              <li>Kept the QA pipeline running from discovery through fix to regression verification.</li>
+            </ul>
+            <p class="tags"><span>TestRail</span><span>DevTrack</span></p>
+          </li>
+          <li class="job">
+            <div class="job-head">
+              <h3>Back End Developer / QA Tester <span class="at">· Meta4</span></h3>
+              <span class="when">Jul 2016 – Mar 2018</span>
+            </div>
+            <p class="where">Las Rozas de Madrid, Spain · Full-time</p>
+            <ul>
+              <li>Developed payroll features for clients and governments across Latin America on the PeopleNet platform, with Oracle.</li>
+              <li>Wrote test automation with Ranorex and ran it in Jenkins, plus manual back-end testing.</li>
+            </ul>
+            <p class="tags"><span>Ranorex</span><span>Jenkins</span><span>Oracle</span><span>Confluence</span></p>
+          </li>
+          <li class="job">
+            <div class="job-head">
+              <h3>Back End Developer / QA Tester <span class="at">· Accenture</span></h3>
+              <span class="when">Aug 2015 – Jul 2016</span>
+            </div>
+            <p class="where">Pozuelo de Alarcón, Spain · Full-time</p>
+            <ul>
+              <li>Developed an online service for Spain's General Directorate of Traffic (DGT) that keeps the record of people with open issues, such as fines.</li>
+              <li>Tested with JUnit together with the development team, and met weekly with the client's QA team to choose testing tools and methods.</li>
+            </ul>
+            <p class="tags"><span>Java</span><span>Spring</span><span>JUnit</span><span>MySQL</span></p>
+          </li>
+        </ol>
       </div>
-      <div class="experience-item">
-        <h4 class="font-weight-bold">Software Quality Assurance Tester</h4>
-        <p class="w3-text-grey"><b>Stamped</b> &middot; Contract Full-time &middot; Jul 2023 - Dec 2023 &middot; Vancouver, BC, Canada (Remote)</p>
-        <p>Developed, maintained and executed manual test cases, identified and triaged defects with
-          cross-functional teams, documented bugs with detailed reproduction steps, and reported on test
-          planning, execution and defect statistics using standard QA metrics.</p>
-      </div>
-      <div class="experience-item">
-        <h4 class="font-weight-bold">Quality Assurance Specialist</h4>
-        <p class="w3-text-grey"><b>Sologenic</b> &middot; Permanent Full-time &middot; Apr 2023 - Jul 2023 &middot; Vancouver, BC, Canada</p>
-        <p>Agile testing and test automation with Playwright.</p>
-      </div>
-      <div class="experience-item">
-        <h4 class="font-weight-bold">Quality Assurance Specialist</h4>
-        <p class="w3-text-grey"><b>Knit Agency</b> &middot; Permanent Full-time &middot; May 2021 - Apr 2023 &middot; Vancouver, BC, Canada</p>
-        <p>Analyzed acceptance criteria and software specifications to create detailed test plans, built test
-          automation for smoke tests and deployments using Cypress, and contributed to the QA team's
-          documentation and methodologies.</p>
-      </div>
-      <div class="experience-item">
-        <h4 class="font-weight-bold">Junior QA Engineer</h4>
-        <p class="w3-text-grey"><b>Craver Solutions</b> &middot; Permanent Full-time &middot; Jan 2021 - May 2021 &middot; Vancouver, BC, Canada</p>
-        <p>Performed functional, non-functional, regression, integration and performance testing, built test
-          automation where sensible, and collaborated with product and engineering teams on root cause
-          analysis and QA tooling.</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="w3-container" id="work" style="padding:26px 16px">
-    <h3 class="w3-center"><b>PROJECTS</b></h3>
-    <div class="w3-row-padding" style="margin-top:64px">
-      <div class="w3-col l3 m6">
-        <center><img alt="Fun With Beer" class="card-img-top" src="/Images/FunWithBeer.png" style="width:67%"></center>
-        <center>
-          <h4 class="card-title font-weight-bold">Fun With Beer</h4>
-        </center>
-        <p class="card-text">This is a app that provide to you information about the different types
-          of beers of each country. You can view the beer from different forms, you can see by type of
-          beer or you can see by continent.
-        </p>
-        <center><a class="btn btn-primary btn-md btn-rounded"
-            href="https://github.com/Enrique92/FunWithBeer">Details</a></center>
+    <!-- Skills -->
+    <section class="section alt" id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Testing</h3>
+            <p class="chips"><span>Manual testing</span><span>Test automation</span><span>API testing</span><span>Mobile testing (iOS, Android)</span><span>Regression</span><span>Smoke</span><span>Integration</span><span>Performance and load</span><span>Test planning</span><span>Requirements analysis</span><span>Defect triage</span></p>
+          </div>
+          <div class="skill-group">
+            <h3>Automation</h3>
+            <p class="chips"><span>Playwright</span><span>Cypress</span><span>Selenium</span><span>Appium</span><span>Maestro</span><span>Ranorex</span><span>JUnit</span><span>Checkly</span></p>
+          </div>
+          <div class="skill-group">
+            <h3>API</h3>
+            <p class="chips"><span>Postman</span><span>Proxyman</span><span>SoapUI</span><span>JMeter</span></p>
+          </div>
+          <div class="skill-group">
+            <h3>CI and version control</h3>
+            <p class="chips"><span>GitHub Actions</span><span>Jenkins</span><span>GitHub</span></p>
+          </div>
+          <div class="skill-group">
+            <h3>Test management and tracking</h3>
+            <p class="chips"><span>TestRail</span><span>Testmo</span><span>JIRA</span><span>ClickUp</span><span>Confluence</span><span>Trello</span></p>
+          </div>
+          <div class="skill-group">
+            <h3>Languages and data</h3>
+            <p class="chips"><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>SQL</span><span>MySQL</span><span>Oracle</span><span>HTML/CSS</span></p>
+          </div>
+          <div class="skill-group">
+            <h3>Mobile</h3>
+            <p class="chips"><span>Xcode</span><span>Android Studio</span><span>TestFlight</span></p>
+          </div>
+          <div class="skill-group">
+            <h3>Platforms</h3>
+            <p class="chips"><span>Shopify</span></p>
+          </div>
+        </div>
       </div>
-      <div class="w3-col l3 m6">
-        <img alt="Silver Bullet" class="card-img-top" src="/Images/SilverBullet.png" style="width:97%">
-        <center>
-          <h4 class="card-title font-weight-bold">Silver Bullet</h4>
-        </center>
-        <p class="card-text">This game was the final project of Java for the Cornerstone International
-          Community College of Canada, develop with JavaFX and dividing the tasks between four
-          teammates with a extraordinary teamwork and doing very enjoyable and funny.
-        </p>
-        <center><a class="btn btn-primary btn-md btn-rounded"
-            href="https://github.com/cornerstone18aug/silver-bullet">Details</a></center>
-      </div>
-      <div class="w3-col l3 m6">
-        <center><img alt="Tydier" class="card-img-top" src="/Images/TydierApp.png" style="width:70%">
-        </center>
-        <center>
-          <h4 class="card-title font-weight-bold">Tydier</h4>
-        </center>
-        <p class="card-text">This app is an Automatic Bookmark Categorizing iOS App using IBM Watson
-          Natural Language Understanding API. Will help you to have all your bookmarks organized
-          easily and fast.
-        </p>
-        <center><a class="btn btn-primary btn-md btn-rounded"
-            href="https://apps.apple.com/us/app/tydier/id1476891210?ls=1">Details</a></center>
-      </div>
-      <div class="w3-col l3 m6">
-        <img alt="My Web Page" class="card-img-top" src="/Images/MyPersonalWeb.png" style="width:100%">
-        <center>
-          <h4 class="card-title font-weight-bold">My Web Page</h4>
-        </center>
-        <p class="card-text">This is my personal web page where you can see more about myself and my
-          personal and team projects. Also you can see more about me and my developer skills.
-        </p>
-        <center><a class="btn btn-primary btn-md btn-rounded" href="https://enrique92.github.io/">Details</a>
-        </center>
-      </div>
-      <div class="w3-col l3 m6">
-        <center><i class="fa fa-cogs project-icon"></i></center>
-        <center>
-          <h4 class="card-title font-weight-bold">Simple Order Service</h4>
-        </center>
-        <p class="card-text">A Java order management service built with Maven, backed by a MySQL database
-          and tested with SoapUI to validate the REST API requests and responses.
-        </p>
-        <center><a class="btn btn-primary btn-md btn-rounded"
-            href="https://github.com/Enrique92/SimpleOrderService">Details</a></center>
-      </div>
-      <div class="w3-col l3 m6">
-        <center><i class="fa fa-plane project-icon"></i></center>
-        <center>
-          <h4 class="card-title font-weight-bold">Book A Flight</h4>
-        </center>
-        <p class="card-text">A Java assignment that simulates a flight booking system, used to practice
-          object-oriented design and core programming logic.
-        </p>
-        <center><a class="btn btn-primary btn-md btn-rounded"
-            href="https://github.com/Enrique92/BookAFlight">Details</a></center>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Modal for full size images on click-->
-  <div class="w3-modal w3-black" id="modal01" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img class="w3-image" id="img01">
-      <p class="w3-opacity w3-large" id="caption"></p>
-    </div>
-  </div>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="Images/TydierApp.png" alt="Tydier app screenshot" loading="lazy">
+            <div class="card-body">
+              <h3>Tydier</h3>
+              <p>An iOS app, published on the App Store, that sorts your bookmarks into categories automatically with the IBM Watson Natural Language Understanding API.</p>
+              <p class="tags"><span>Swift</span><span>AWS Lambda</span><span>DynamoDB</span></p>
+              <a class="card-link" href="https://apps.apple.com/us/app/tydier/id1476891210" target="_blank" rel="noopener">View on the App Store</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="Images/FunWithBeer.png" alt="Fun With Beer app screenshot" loading="lazy">
+            <div class="card-body">
+              <h3>Fun With Beer</h3>
+              <p>An Android catalogue of beers from around the world, browsable by type and by continent.</p>
+              <p class="tags"><span>Android</span><span>Firebase</span></p>
+              <a class="card-link" href="https://github.com/Enrique92/FunWithBeer" target="_blank" rel="noopener">Code on GitHub</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="Images/SilverBullet.png" alt="Silver Bullet game screenshot" loading="lazy">
+            <div class="card-body">
+              <h3>Silver Bullet</h3>
+              <p>A two-player desktop game in JavaFX, built by a team of four as the final Java project at Cornerstone College.</p>
+              <p class="tags"><span>Java</span><span>JavaFX</span><span>Maven</span></p>
+              <a class="card-link" href="https://github.com/cornerstone18aug/silver-bullet" target="_blank" rel="noopener">Code on GitHub</a>
+            </div>
+          </article>
+          <article class="card card-plain">
+            <div class="card-body">
+              <h3>Simple Order Service</h3>
+              <p>A Java order management service built with Maven and backed by MySQL, with its REST API requests and responses tested in SoapUI.</p>
+              <p class="tags"><span>Java</span><span>MySQL</span><span>SoapUI</span></p>
+              <a class="card-link" href="https://github.com/Enrique92/SimpleOrderService" target="_blank" rel="noopener">Code on GitHub</a>
+            </div>
+          </article>
+          <article class="card card-plain">
+            <div class="card-body">
+              <h3>Book A Flight</h3>
+              <p>A Java flight booking simulation, written to practise object-oriented design.</p>
+              <p class="tags"><span>Java</span></p>
+              <a class="card-link" href="https://github.com/Enrique92/BookAFlight" target="_blank" rel="noopener">Code on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- Skills Section -->
-  <div class="w3-container w3-light-grey" id="skills" style="padding:26px 16px">
-    <h3 class="w3-center"><b>SKILLS</b></h3>
-    <div class="w3-col m6">
-      <p><b><i><u>Manual & Automated Testing</u></i></b></p>
-      <p class="w3-wide"><i class="fa"></i> - Manual Testing</p>
-      <p class="w3-wide"><i class="fa"></i> - Test Automation</p>
-      <p class="w3-wide"><i class="fa"></i> - Playwright</p>
-      <p class="w3-wide"><i class="fa"></i> - Cypress</p>
-      <p class="w3-wide"><i class="fa"></i> - Selenium</p>
-      <p class="w3-wide"><i class="fa"></i> - Checkly</p>
-      <p class="w3-wide"><i class="fa"></i> - Testmo / TestRail</p>
-      <p><b><i><u>Programming Languages</u></i></b></p>
-      <p class="w3-wide"><i class="fa"></i> - JavaScript</p>
-      <p class="w3-wide"><i class="fa"></i> - TypeScript</p>
-      <p class="w3-wide"><i class="fa"></i> - HTML</p>
-      <p class="w3-wide"><i class="fa"></i> - CSS</p>
-    </div>
-    <div class="w3-col m6">
-      <p><b><i><u>API Testing & CI/CD</u></i></b></p>
-      <p class="w3-wide"><i class="fa"></i> - Postman</p>
-      <p class="w3-wide"><i class="fa"></i> - JMeter</p>
-      <p class="w3-wide"><i class="fa"></i> - SoapUI</p>
-      <p class="w3-wide"><i class="fa"></i> - Jenkins</p>
-      <p><b><i><u>E-Commerce</u></i></b></p>
-      <p class="w3-wide"><i class="fa"></i> - Shopify</p>
-      <p><b><i><u>Databases</u></i></b></p>
-      <p class="w3-wide"><i class="fa"></i> - Oracle</p>
-      <p class="w3-wide"><i class="fa"></i> - MySQL</p>
-      <p><b><i><u>Version Control & Bug Tracking</u></i></b></p>
-      <p class="w3-wide"><i class="fa"></i> - GitHub</p>
-      <p class="w3-wide"><i class="fa"></i> - JIRA</p>
-      <p class="w3-wide"><i class="fa"></i> - Trello</p>
-      <p class="w3-wide"><i class="fa"></i> - Mantis</p>
-    </div>
-  </div>
+    <!-- Education -->
+    <section class="section alt" id="education">
+      <div class="wrap two-col">
+        <div>
+          <h2>Education</h2>
+          <ul class="plain-list">
+            <li><strong>Web &amp; Mobile App Development Co-op Diploma</strong><span>Cornerstone International Community College of Canada · Vancouver · 2018–2020</span></li>
+            <li><strong>Higher Education Certificate in Multiplatform Application Development</strong><span>San Roman · Madrid · 2013–2015</span></li>
+            <li><strong>Higher Education Certificate in Network Systems Administration</strong><span>Salesianos de Atocha · Madrid · 2011–2013</span></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Certifications</h2>
+          <ul class="plain-list">
+            <li><strong>Software Development Lifecycle</strong><span>Jun 2023</span></li>
+            <li><strong>SQL (Basic)</strong><span>HackerRank · Jan 2022</span></li>
+            <li><strong>Java (Basic)</strong><span>HackerRank · Jan 2022</span></li>
+            <li><strong>CCNA Exploration and CCNA Security</strong><span>Cisco · Mar 2013</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <div class="w3-container w3-light-grey" id="contact" style="padding:26px 16px">
-    <h3 class="w3-center"><b>CONTACT</b></h3>
-    <div style="margin-top:48px">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Vancouver, BC, Canada.</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+1 (778) 689 5106</p>
-      <p><a href="mailto:enrique.alcaide.canadian@gmail.com?Subject=Contact" target="_top"><i
-            class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>enrique.alcaide.canadian@gmail.com</a>
-      </p>
-      <p><a href="https://ca.linkedin.com/in/enrique-alcaide-muñoz" target="_blank"><i
-            class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"> </i>linkedin.com/in/enrique-alcaide-muñoz</a>
-      </p>
-      <br>
-    </div>
-  </div>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2>About me</h2>
+        <p>I'm from Spain and I live in Vancouver. I started as a back-end developer and QA tester in Madrid, at
+          Accenture and Meta4. In 2018 I left my hometown and my family to start again in Canada. It wasn't easy:
+          the language was a real barrier at first, and I took any job I could to pay for my bills and my studies.
+          After finishing my studies it was hard to break into QA, but one company gave me the chance, and since
+          then I've worked hard to keep improving and learning every day.</p>
+        <p>Today I work across the whole Agile life cycle for mobile, web and API products: reviewing requirements
+          before development, planning and running the testing, and automating what should run on every release.
+          Vancouver is home now, and my advice is simple: keep fighting for your ideas and dreams, and never give up.</p>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64">
-    <a class="w3-button w3-light-grey rounded" href="#home"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-      <a href="https://ca.linkedin.com/in/enrique-alcaide-muñoz" title="Linkedin"><i
-          class="fa fa-linkedin w3-hover-opacity"></i></a>
-      <a href="https://github.com/Enrique92" title="GitHub"><i class="fa fa-github w3-hover-opacity"></i></a>
-    </div>
-    <p>Created by <a class="w3-hover-text-green" href="" target="_blank" title="Enrique Alcaide Muñoz">Enrique Alcaide
-        Muñoz</a></p>
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="lead">Open to QA roles in Canada, Spain and the rest of Europe, on-site, hybrid or remote.</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:enrique.alcaide92@gmail.com">enrique.alcaide92@gmail.com</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/enrique-alcaide-mu%C3%B1oz/" target="_blank" rel="noopener">linkedin.com/in/enrique-alcaide-muñoz</a></li>
+          <li><span>GitHub</span><a href="https://github.com/Enrique92" target="_blank" rel="noopener">github.com/Enrique92</a></li>
+          <li><span>Location</span>Vancouver, British Columbia, Canada</li>
+        </ul>
+        <a class="btn btn-primary" href="Enrique_Alcaide_Resume.pdf" download>Download CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="year">2026</span> Enrique Alcaide Muñoz</div>
   </footer>
 
-  <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
-
 </html>
